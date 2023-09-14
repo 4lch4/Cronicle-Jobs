@@ -1,0 +1,51 @@
+{
+  "name": "hacker-news-job",
+  "displayName": "Hacker News Job",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/4lch4/Hacker-News-Job",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc && tsc-alias",
+    "pretty": "prettier --write .",
+    "lint": "prettier -c .",
+    "test": "echo 'There are currently no tests available.'",
+    "scan": "snyk monitor && snyk code test"
+  },
+  "files": ["dist"],
+  "engines": { "node": ">=16.0.0" },
+  "keywords": ["Hacker-News-Job"],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/4lch4/Hacker-News-Job.git"
+  },
+  "author": {
+    "name": "4lch4",
+    "email": "hey@4lch4.email",
+    "url": "https://4lch4.com"
+  },
+  "bugs": {
+    "email": "bugs@4lch4.email",
+    "url": "https://github.com/4lch4/Hacker-News-Job/issues"
+  },
+  "dependencies": {
+    "@4lch4/lib-hn": "^1.0.0",
+    "@4lch4/logger": "^1.0.0",
+    "@axiomhq/winston": "^0.1.3",
+    "mongodb": "^6.0.0",
+    "p-queue": "^7.4.1",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "prettier": "^2.8.8",
+    "bun-types": "^1.0.1",
+    "tsc-alias": "^1.0.0",
+    "typescript": "^5.2.2"
+  }
+}
