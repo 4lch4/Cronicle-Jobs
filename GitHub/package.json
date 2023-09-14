@@ -1,5 +1,5 @@
 {
-  "name": "@4cron/jobs-github",
+  "name": "@4cron/job-github",
   "displayName": "GitHub Job",
   "version": "0.0.0",
   "description": "A batch job, that runs in Cronicle, for GitHub related data.",
