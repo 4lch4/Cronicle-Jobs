@@ -2,12 +2,12 @@
  * This interface defines the shape of the object returned by the GitHub API when requesting a
  * user's starred repos. The response will be an array of these objects.
  */
-export interface StarredRepos {
+export interface StarredRepository {
   starred_at: string
-  repo: Repo
+  repo: Repository
 }
 
-export interface Repo {
+export interface Repository {
   id: number
   node_id: string
   name: string
